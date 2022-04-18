@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 14px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+}
+
+/*
+Light 300
+Regular 400
+Medium 500
+Bold 700
+Black 900
+*/
+
+.container {
+	max-width: 1200px;
+	padding: 0 0.7rem;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 0.9rem;
+	padding-bottom: 0.9rem;
+	}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo__img {
+
+}
+
+.logo__text {
+	margin-left: 1.1rem;
+	font-size: 1.5rem;
+}
+
+.logo__text span {
+	color: #7ad66c;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.nav {
+
+}
+
+.nav__menu {
+	display: flex;
+}
+
+.nav__link {
+	margin-right: 2rem;
+	text-transform: uppercase;
+	color: #464646;
+}
+
+.nav__menu li:last-child {
+	margin-right: -2rem;
+}
+
+.nav__link:hover {
+	color: #7ad66c;
+}
+
+.contacts {
+	display: flex;
+	align-items: center;
+}
+
+.contacts__inner {
+	margin-right: 1.9rem;
+}
+
+.contacts__text {
+	margin-bottom: 0.5rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.contacts__tel {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.btn {
+	height: 100%;
+	padding: 1.3rem 2.1rem;
+
+	border-radius: 25px;
+	color: #fff;
+	background-color: #7ad66c;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+/*================================*/
+/*==============MEDIA=============*/
+/*================================*/
+/*0-575px 576-767px 767-991px 992-1199px 1200px + */
+
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 12px;
+	}
+	.container {
+		width: 1200px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	html {
+		font-size: 11px;
+	}
+	.container {
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	html {
+		font-size: 8px;
+	}
+	.container {
+		width: 720px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	html {
+		font-size: 6px;
+	}
+	.container {
+		width: 540px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	html {
+		font-size: 6px;
+	}
+	.container {
+		width: 100%;
+	}
+	.header {
+		justify-content:start;
+	}
+	.header__logo {
+		margin-right: 5rem;
+	}
+	.nav {
+		display: none;
+	}
+
+	.contacts__text {
+		margin-right: 5rem;
+	}
+}
